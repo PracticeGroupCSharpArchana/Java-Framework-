@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[Called Function : [readPropertyFile] with parameters [filePath]=>.//config/env.properties]]>
+    </line>
+    <line>
+      <![CDATA[Called Function : [readPropertyFile] with parameters [filePath]=>.//resources/testdata/insuranceAgent/testLogin.properties]]>
+    </line>
+    <line>
+      <![CDATA[Called Function : [openURL] with parameters [URL]=>http://parabank.parasoft.com/parabank/index.htm]]>
+    </line>
+    <line>
+      <![CDATA[Called Function : [configureDriver] with parameters [none]=>None]]>
+    </line>
+    <line>
+      <![CDATA[Called Function : [loginToApplication] with parameters [userName],[password]=>john,demo]]>
+    </line>
+    <line>
+      <![CDATA[Called Function : [findElement] with parameters [elementLocator]=>By.name: username]]>
+    </line>
+    <line>
+      <![CDATA[Called Function : [fluentWait] with parameters [locator]=>By.name: username]]>
+    </line>
+    <line>
+      <![CDATA[Called Function : [isElementVisible] with parameters [locator]=>By.name: username]]>
+    </line>
+    <line>
+      <![CDATA[Element has been Found]]>
+    </line>
+    <line>
+      <![CDATA[Called Function : [findElement] with parameters [elementLocator]=>By.name: password]]>
+    </line>
+    <line>
+      <![CDATA[Called Function : [fluentWait] with parameters [locator]=>By.name: password]]>
+    </line>
+    <line>
+      <![CDATA[Called Function : [isElementVisible] with parameters [locator]=>By.name: password]]>
+    </line>
+    <line>
+      <![CDATA[Element has been Found]]>
+    </line>
+    <line>
+      <![CDATA[Called Function : [findElement] with parameters [elementLocator]=>By.className: button]]>
+    </line>
+    <line>
+      <![CDATA[Called Function : [fluentWait] with parameters [locator]=>By.className: button]]>
+    </line>
+    <line>
+      <![CDATA[Called Function : [isElementVisible] with parameters [locator]=>By.className: button]]>
+    </line>
+    <line>
+      <![CDATA[Element has been Found]]>
+    </line>
+    <line>
+      <![CDATA[Called Function : [closeCurrentBrowser]]]>
+    </line>
+    <line>
+      <![CDATA[Called Function : [closeAllOpenBrowser]]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="17758" started-at="2017-07-09T17:28:53Z" finished-at="2017-07-09T17:29:11Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="17758" started-at="2017-07-09T17:28:53Z" finished-at="2017-07-09T17:29:11Z">
+      <class name="com.ui.test.testScripts.testLogin">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ui.test.testScripts.testLogin@62ee68d8]" name="setUp" is-config="true" duration-ms="10426" started-at="2017-07-09T22:58:53Z" finished-at="2017-07-09T22:59:04Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Called Function : [readPropertyFile] with parameters [filePath]=>.//config/env.properties]]>
+            </line>
+            <line>
+              <![CDATA[Called Function : [readPropertyFile] with parameters [filePath]=>.//resources/testdata/insuranceAgent/testLogin.properties]]>
+            </line>
+            <line>
+              <![CDATA[Called Function : [openURL] with parameters [URL]=>http://parabank.parasoft.com/parabank/index.htm]]>
+            </line>
+            <line>
+              <![CDATA[Called Function : [configureDriver] with parameters [none]=>None]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testValidLogin()[pri:0, instance:com.ui.test.testScripts.testLogin@62ee68d8]" name="testValidLogin" duration-ms="5870" started-at="2017-07-09T22:59:04Z" description="To Test login functionality with Valid Username and Password" finished-at="2017-07-09T22:59:10Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Called Function : [loginToApplication] with parameters [userName],[password]=>john,demo]]>
+            </line>
+            <line>
+              <![CDATA[Called Function : [findElement] with parameters [elementLocator]=>By.name: username]]>
+            </line>
+            <line>
+              <![CDATA[Called Function : [fluentWait] with parameters [locator]=>By.name: username]]>
+            </line>
+            <line>
+              <![CDATA[Called Function : [isElementVisible] with parameters [locator]=>By.name: username]]>
+            </line>
+            <line>
+              <![CDATA[Element has been Found]]>
+            </line>
+            <line>
+              <![CDATA[Called Function : [findElement] with parameters [elementLocator]=>By.name: password]]>
+            </line>
+            <line>
+              <![CDATA[Called Function : [fluentWait] with parameters [locator]=>By.name: password]]>
+            </line>
+            <line>
+              <![CDATA[Called Function : [isElementVisible] with parameters [locator]=>By.name: password]]>
+            </line>
+            <line>
+              <![CDATA[Element has been Found]]>
+            </line>
+            <line>
+              <![CDATA[Called Function : [findElement] with parameters [elementLocator]=>By.className: button]]>
+            </line>
+            <line>
+              <![CDATA[Called Function : [fluentWait] with parameters [locator]=>By.className: button]]>
+            </line>
+            <line>
+              <![CDATA[Called Function : [isElementVisible] with parameters [locator]=>By.className: button]]>
+            </line>
+            <line>
+              <![CDATA[Element has been Found]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testValidLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.ui.test.testScripts.testLogin@62ee68d8]" name="tearDown" is-config="true" duration-ms="1435" started-at="2017-07-09T22:59:10Z" finished-at="2017-07-09T22:59:11Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Called Function : [closeCurrentBrowser]]]>
+            </line>
+            <line>
+              <![CDATA[Called Function : [closeAllOpenBrowser]]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.ui.test.testScripts.testLogin -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
