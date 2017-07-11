@@ -5,6 +5,7 @@
     <classes>
       <class name="com.ui.test.testScripts.testLogin">
         <methods>
+          <include name="testinvalidLogin"/>
           <include name="setUp"/>
           <include name="tearDown"/>
           <include name="testValidLogin"/>

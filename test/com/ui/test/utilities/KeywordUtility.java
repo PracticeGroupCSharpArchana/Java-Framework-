@@ -1,5 +1,7 @@
 package com.ui.test.utilities;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -76,7 +78,8 @@ public WebDriver driver;
 	}
  }
  
- public void testNGReportLogger(String message){
+ @Test
+public void testNGReportLogger(String message){
 	 System.out.println(message);
 	 org.testng.Reporter.log(message);
  }
@@ -109,6 +112,9 @@ public WebDriver driver;
 	    return elementToBeFound;
 	}
 
+
+	
+	
 	
 	public void loginToApplication(String userName,String password){
 		testNGReportLogger("Called Function : [loginToApplication] with parameters [userName],[password]=>"+userName+","+password); 
@@ -118,6 +124,20 @@ public WebDriver driver;
 	
 	}
 
+	public void validateinvalidLogin(String username,String password)
+	{
+		testNGReportLogger("called Fuction: [invalidTologin] with parameters [username], [password]=>"+username+","+password);
+		findElement(UIMap.loginEditBoxName).sendKeys(username);
+	    findElement(UIMap.loginPagePasswrdEditBoxname).sendKeys(password);
+		findElement(UIMap.loginPageSignInButtonName).click();
+		String error=findElement(UIMap.loginerrormessage).getText();
+		AssertJUnit.assertEquals(error, UIConstants.loginerrormsg);
+	}
+	
+	
+	
+	
+	
 	public void closeCurrentBrowser() {
 		// TODO Auto-generated method stub
 		testNGReportLogger("Called Function : [closeCurrentBrowser]"); 

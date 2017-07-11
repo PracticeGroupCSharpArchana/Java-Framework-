@@ -10,6 +10,7 @@ public class UIMap {
 	public static By loginEditBoxName=By.name("username");
 	public static By loginPagePasswrdEditBoxname=By.name("password");
 	public static By loginPageSignInButtonName=By.className("button");
+	public static By loginerrormessage= By.className("error");
 
 	
 

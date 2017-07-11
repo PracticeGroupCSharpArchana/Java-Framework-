@@ -1,5 +1,8 @@
 package com.ui.test.testScripts;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -21,10 +24,16 @@ public class testLogin {
 	KeywordUtility util;
 	Properties data;
 		
+	@BeforeMethod
 	@BeforeTest
 	public void setUp() throws IOException{
 		util=new KeywordUtility(this.getClass().getSimpleName());
 		data=util.testDataProp;
+	}
+	@Test(description="To Test invalid login fuctionality")
+	public void testinvalidLogin()
+	{
+		util.validateinvalidLogin(data.getProperty("iusername"), data.getProperty("ipassword"));
 	}
 	
 	@Test(description="To Test login functionality with Valid Username and Password")
@@ -32,6 +41,7 @@ public class testLogin {
 		util.loginToApplication(data.getProperty("userName"), data.getProperty("password"));
 	}
 	
+	@AfterMethod
 	@AfterTest
 	public void tearDown(){
 		util.closeCurrentBrowser();
