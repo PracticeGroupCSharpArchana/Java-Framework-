@@ -121,6 +121,7 @@ public void testNGReportLogger(String message){
 		findElement(UIMap.loginEditBoxName).sendKeys(userName);
 	    findElement(UIMap.loginPagePasswrdEditBoxname).sendKeys(password);
 		findElement(UIMap.loginPageSignInButtonName).click();
+		findElement(UIMap.logoutlink).click();
 	
 	}
 

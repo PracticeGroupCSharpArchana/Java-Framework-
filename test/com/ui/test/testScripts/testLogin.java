@@ -24,7 +24,7 @@ public class testLogin {
 	KeywordUtility util;
 	Properties data;
 		
-	@BeforeMethod
+	
 	@BeforeTest
 	public void setUp() throws IOException{
 		util=new KeywordUtility(this.getClass().getSimpleName());
@@ -41,7 +41,7 @@ public class testLogin {
 		util.loginToApplication(data.getProperty("userName"), data.getProperty("password"));
 	}
 	
-	@AfterMethod
+	
 	@AfterTest
 	public void tearDown(){
 		util.closeCurrentBrowser();

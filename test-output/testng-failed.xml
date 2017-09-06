@@ -8,7 +8,6 @@
           <include name="testinvalidLogin"/>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="testValidLogin"/>
         </methods>
       </class> <!-- com.ui.test.testScripts.testLogin -->
     </classes>
